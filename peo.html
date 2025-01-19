@@ -1,13 +1,194 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عن الموقع</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Food Menu Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #00bcd4;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header input {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        header button {
+            padding: 10px 20px;
+            background: #ff4d4d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .explore {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .explore img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .explore div {
+            width: 30%;
+        }
+
+        .explore h3 {
+            margin-top: 10px;
+        }
+
+        .menu {
+            margin-top: 40px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h4 {
+            margin: 10px 0;
+        }
+
+        .menu-item button {
+            padding: 10px;
+            background: #ff4d4d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+            margin-top: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #00bcd4;
+        }
+
+        footer .socials a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    
-           
+    <header>
+        <h1>wowFood</h1>
+        <input type="text" placeholder="Search for Food">
+        <button>Search</button>
+    </header>
+
+    <section>
+        <h2>Explore Foods</h2>
+        <div class="explore">
+            <div>
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+            </div>
+            <div>
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+            </div>
+            <div>
+                <img src="memo.jpg" alt="Momo">
+                <h3>Momo</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2>Food Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Food Item">
+                <h4>Food Title</h4>
+                <p>$2.3</p>
+                <p>Made with Italian Sauce, Chicken, and organic vegetables.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Burger">
+                <h4>Smoky Burger</h4>
+                <p>$2.3</p>
+                <p>Made with Italian Sauce, Chicken, and organic vegetables.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Food Item">
+                <h4>Nice Burger</h4>
+                <p>$2.3</p>
+                <p>Made with Italian Sauce, Chicken, and organic vegetables.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="memo.jpg" alt="Momo">
+                <h4>Chicken Steam Momo</h4>
+                <p>$2.3</p>
+                <p>Made with Italian Sauce, Chicken, and organic vegetables.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>See All Foods</p>
+        <div class="socials">
+            <a href="#">&#128077;</a>
+            <a href="#">&#128151;</a>
+            <a href="#">&#128249;</a>
+        </div>
+        <p>All rights reserved. Designed by <a href="#">Your Name</a></p>
+    </footer>
 </body>
 </html>
