@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            align-self: start;
+        }
+        
+        ul{
+            text-align: end;
+        }
+
+        a{
+            color: #fff;
+        }
+  
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            justify-items: end;
+
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            margin: 10px 0 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px ;
+            margin-top: 40px;
+            justify-items: stretch;
+
+        }
+
+        footer a {
+            color: #fff;
+            margin:  10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .meta-info {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+        }
+
+        .contact {
+            background-color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .contact h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #007BFF;
+            display: block;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .contact a:hover {
+            color: #0056b3;
+        }
+
+
+    </style>     
+        
+</head>
+<body>
+   <nav class="nav">
+    <img class="logo" src="" alt="">
+    <h4 >nito</h4>
+    <ul class="nav-links">
+        <a href="#">الرئيسية</a>
+        <a href="#">عنّا</a>
+        <a href="#">الخدمات</a>
+        <a href="#">اتصل بنا</a>
+    <br><br>
+    <form class="search-form">
+        <input type="text" placeholder="ابحث هنا..." />
+        <button type="submit">بحث</button>
+    </form>
+</ul>
+   </nav>
+    <section class="container">
+        <div class="card">
+            <img src="h1.jpg" alt="Placeholder image">
+            <div class="card-content">
+                <span class="meta-info">Life Style | 26 March 2025</span>
+                <h3>The first post in my blog</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="h2.jpg" alt="Placeholder image">
+            <div class="card-content">
+                <span class="meta-info">Business | 26 March 2025</span>
+                <h3>The first post in my blog</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="h3.jpg" alt="Placeholder image">
+            <div class="card-content">
+                <span class="meta-info">Life Style | 26 March 2025</span>
+                <h3>Post with Quote</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="h4.jpg" alt="Placeholder image">
+            <div class="card-content">
+                <span class="meta-info">Business | 26 March 2025</span>
+                <h3>The first post in my blog</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="h5.jpg" alt="Placeholder image">
+            <div class="card-content">
+                <span class="meta-info">Life Style | 26 March 2025</span>
+                <h3>The first post in my blog</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="h6.jpg" alt="Placeholder image">
+            <div class="card-content">
+                <span class="meta-info">Business | 26 March 2025</span>
+                <h3>The first post in my blog</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+<h2> nito</h2>
+<p>يمكنك التواصل معنا و متابعة صفحاتنا
+ <br>على التواصل الاجتماعي لمشاهدة العروض و تفاصيل الفندق</p>
+    
+ <nav class="navbar">
+    <div class="contact">
+        <h2> nito</h2>
+<p>يمكنك التواصل معنا و متابعة صفحاتنا
+ <br>على التواصل الاجتماعي لمشاهدة العروض و تفاصيل الفندق</p>
+        <h2>وسائل التواصل</h2>
+        <p><a href="tel:+1234567890">📞 الاتصال: +1234567890</a></p>
+        <p><a href="mailto:example@example.com">📧 البريد الإلكتروني: example@example.com</a></p>
+        <p><a href="https://wa.me/1234567890" target="_blank">📱 واتساب: تواصل عبر واتساب</a></p>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</nav>
+</footer>
+    
+
+  
+</body>
+</html>
